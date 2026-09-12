@@ -11,7 +11,7 @@
 set -euo pipefail
 
 PROJECT_ID="${PROJECT_ID:?Set PROJECT_ID env var to your GCP project id}"
-DATASET="${RAW_DATASET:-raw_ecommerce}"
+DATASET="${RAW_DATASET:-ecommerce_dataset}"
 ROOT_DIR="$(cd "$(dirname "$0")/.." && pwd)"
 DATA_DIR="${ROOT_DIR}/data"
 DDL_DIR="${ROOT_DIR}/sql/raw"
