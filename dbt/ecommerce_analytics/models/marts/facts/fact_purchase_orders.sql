@@ -1,0 +1,20 @@
+select
+    po_id,
+    supplier_id,
+    product_id,
+    warehouse_id,
+    order_date,
+    expected_delivery_date,
+    received_date,
+    qty_ordered,
+    qty_received,
+    qty_shortfall,
+    unit_cost,
+    total_value,
+    actual_lead_days,
+    contracted_lead_time_days,
+    days_late,
+    is_late,
+    is_short_shipped,
+    status
+from {{ ref('int_supplier_operations') }}

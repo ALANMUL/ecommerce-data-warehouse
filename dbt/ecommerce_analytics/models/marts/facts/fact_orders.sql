@@ -1,0 +1,22 @@
+select
+    order_id,
+    customer_id,
+    order_date,
+    order_status,
+    region,
+    primary_warehouse_id as warehouse_id,
+    order_subtotal,
+    discount_amount,
+    shipping_cost,
+    tax_amount,
+    order_total,
+    payment_method,
+    promo_id,
+    cancelled_date,
+    cancel_reason,
+    total_paid,
+    total_refunded,
+    return_count,
+    return_refund_amount,
+    is_completed_order
+from {{ ref('int_customer_orders') }}

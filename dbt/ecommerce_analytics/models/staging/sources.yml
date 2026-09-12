@@ -1,0 +1,19 @@
+version: 2
+
+sources:
+  - name: raw_ecommerce
+    database: "{{ target.project }}"
+    schema: "{{ var('raw_dataset') }}"
+    tables:
+      - name: customers
+      - name: products
+      - name: suppliers
+      - name: warehouses
+      - name: orders
+      - name: order_items
+      - name: inventory_daily
+      - name: purchase_orders
+      - name: shipments
+      - name: payments
+      - name: returns
+      - name: promotions

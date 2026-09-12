@@ -1,0 +1,23 @@
+select
+    shipment_id,
+    order_id,
+    customer_id,
+    warehouse_id,
+    carrier,
+    shipping_mode,
+    order_date,
+    ship_date,
+    estimated_delivery_date,
+    delivery_date,
+    status,
+    delivery_status,
+    n_items,
+    weight,
+    shipping_cost,
+    delivery_attempts,
+    failure_reason,
+    delivery_delay_days,
+    processing_days,
+    is_late_delivery,
+    is_delivered
+from {{ ref('int_shipments') }}

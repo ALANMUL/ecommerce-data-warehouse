@@ -1,0 +1,41 @@
+product_id,sku,product_name,brand,category,supplier_id,cost,base_price,weight_kg,launch_date,discontinued_date,is_active
+PRD_0001,ORB-HOM-0001,Orbita Throw Blanket,Orbita,Home,SUP_006,48.68,107.02,1.72,2022-06-01,,1
+PRD_0002,ORB-APP-0002,Orbita Sneakers,Orbita,Apparel,SUP_001,11.94,23.87,6.01,2022-06-01,,1
+PRD_0003,POL-BEA-0003,Polaris Hair Dryer,Polaris,Beauty,SUP_007,21.67,38.92,1.21,2022-06-01,,1
+PRD_0004,VOL-APP-0004,Voltix Denim Jacket,Voltix,Apparel,SUP_002,35.14,62.03,6.69,2022-06-01,,1
+PRD_0005,NEX-HOM-0005,Nexa Robot Vacuum,Nexa,Home,SUP_008,42.45,89.76,5.52,2022-06-01,2024-03-11,0
+PRD_0006,AUR-ELE-0006,Aurora Mechanical Keyboard,Aurora,Electronics,SUP_002,5.33,11.18,5.39,2022-06-01,,1
+PRD_0007,AUR-HOM-0007,Aurora Standing Desk Lamp,Aurora,Home,SUP_001,25.65,48.49,1.09,2022-06-01,,1
+PRD_0008,VOL-HOM-0008,Voltix Scented Candle Set,Voltix,Home,SUP_004,30.44,63.22,5.15,2022-06-01,,1
+PRD_0009,NEX-APP-0009,Nexa Sneakers,Nexa,Apparel,SUP_003,18.68,25.76,1.87,2022-06-01,,1
+PRD_0010,POL-APP-0010,Polaris Windbreaker,Polaris,Apparel,SUP_007,15.53,21.83,2.39,2022-06-01,,1
+PRD_0011,POL-ELE-0011,Polaris LED Monitor,Polaris,Electronics,SUP_008,30.07,62.99,3.37,2022-06-01,,1
+PRD_0012,LUM-HOM-0012,Lumina Robot Vacuum,Lumina,Home,SUP_002,6.02,8.64,5.83,2022-06-01,,1
+PRD_0013,ORB-APP-0013,Orbita Joggers,Orbita,Apparel,SUP_004,27.55,41.18,3.68,2022-06-01,,1
+PRD_0014,LUM-ELE-0014,Lumina Smart Speaker,Lumina,Electronics,SUP_003,33.36,56.5,1.12,2022-06-01,2023-11-27,0
+PRD_0015,ZEN-BEA-0015,Zentro Makeup Brush Set,Zentro,Beauty,SUP_007,36.49,58.48,6.27,2022-06-01,,1
+PRD_0016,TIT-HOM-0016,Titan Standing Desk Lamp,Titan,Home,SUP_004,17.25,24.87,7.24,2022-06-01,,1
+PRD_0017,ORB-APP-0017,Orbita Joggers,Orbita,Apparel,SUP_005,18.77,35.67,6.88,2022-06-01,,1
+PRD_0018,VOL-HOM-0018,Voltix Throw Blanket,Voltix,Home,SUP_006,24.44,47.56,4.76,2022-06-01,,1
+PRD_0019,LUM-APP-0019,Lumina Hoodie,Lumina,Apparel,SUP_002,23.71,32.95,2.77,2022-06-01,,1
+PRD_0020,POL-ELE-0020,Polaris LED Monitor,Polaris,Electronics,SUP_001,31.44,47.54,7.42,2022-06-01,,1
+PRD_0021,POL-APP-0021,Polaris Denim Jacket,Polaris,Apparel,SUP_002,31.59,43.33,3.96,2022-06-01,,1
+PRD_0022,TIT-HOM-0022,Titan Air Fryer,Titan,Home,SUP_001,26.9,48.86,7.52,2022-06-01,,1
+PRD_0023,KRA-APP-0023,Krafton Sneakers,Krafton,Apparel,SUP_007,17.01,28.32,0.37,2022-06-01,2024-04-27,0
+PRD_0024,POL-HOM-0024,Polaris Air Fryer,Polaris,Home,SUP_008,11.31,21.22,1.05,2022-06-01,,1
+PRD_0025,VOL-HOM-0025,Voltix Robot Vacuum,Voltix,Home,SUP_008,34.67,70.75,1.04,2022-06-01,,1
+PRD_0026,ORB-SPO-0026,Orbita Hydration Pack,Orbita,Sports,SUP_002,6.68,12.54,3.09,2022-06-01,,1
+PRD_0027,POL-HOM-0027,Polaris Standing Desk Lamp,Polaris,Home,SUP_006,19.27,43.46,4.22,2024-06-08,,1
+PRD_0028,AUR-ELE-0028,Aurora Webcam HD,Aurora,Electronics,SUP_008,12.41,17.28,3.59,2024-06-21,,1
+PRD_0029,VOL-BEA-0029,Voltix Makeup Brush Set,Voltix,Beauty,SUP_002,38.69,84.97,4.25,2024-07-10,,1
+PRD_0030,SOL-ELE-0030,Solace Wireless Earbuds,Solace,Electronics,SUP_007,34.77,59.28,0.94,2024-07-19,,1
+PRD_0031,ZEN-HOM-0031,Zentro Robot Vacuum,Zentro,Home,SUP_001,47.16,74.46,6.68,2024-07-25,,1
+PRD_0032,VOL-ELE-0032,Voltix LED Monitor,Voltix,Electronics,SUP_002,31.97,69.72,2.62,2024-07-28,2024-01-04,0
+PRD_0033,ZEN-HOM-0033,Zentro Storage Organizer,Zentro,Home,SUP_008,27.53,40.93,1.99,2024-08-24,,1
+PRD_0034,NEX-ELE-0034,Nexa Wireless Earbuds,Nexa,Electronics,SUP_006,10.48,19.19,5.62,2024-08-27,,1
+PRD_0035,POL-APP-0035,Polaris Joggers,Polaris,Apparel,SUP_001,41.19,83.6,1.22,2024-09-05,,1
+PRD_0036,ORB-ELE-0036,Orbita Portable Charger,Orbita,Electronics,SUP_008,22.89,37.45,4.01,2024-09-19,,1
+PRD_0037,ZEN-HOM-0037,Zentro Storage Organizer,Zentro,Home,SUP_004,17.89,39.87,4.53,2024-09-19,,1
+PRD_0038,NEX-APP-0038,Nexa Graphic Tee,Nexa,Apparel,SUP_001,11.32,19.79,7.74,2024-10-11,,1
+PRD_0039,VOL-APP-0039,Voltix Windbreaker,Voltix,Apparel,SUP_006,41.2,73.91,0.34,2024-11-08,,1
+PRD_0040,ORB-ELE-0040,Orbita USB-C Hub,Orbita,Electronics,SUP_007,40.86,64.19,4.34,2024-12-14,,1

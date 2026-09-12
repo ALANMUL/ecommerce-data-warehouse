@@ -1,0 +1,18 @@
+# dbt
+dbt/ecommerce_analytics/target/
+dbt/ecommerce_analytics/dbt_packages/
+dbt/ecommerce_analytics/logs/
+dbt/ecommerce_analytics/profiles.yml
+
+# secrets
+*.json
+!package.json
+**/service-account*.json
+
+# python
+.venv/
+__pycache__/
+*.pyc
+
+# OS
+.DS_Store

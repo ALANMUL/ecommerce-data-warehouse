@@ -1,0 +1,71 @@
+version: 2
+
+models:
+  - name: stg_customers
+    columns:
+      - name: customer_id
+        tests: [unique, not_null]
+
+  - name: stg_products
+    columns:
+      - name: product_id
+        tests: [unique, not_null]
+
+  - name: stg_suppliers
+    columns:
+      - name: supplier_id
+        tests: [unique, not_null]
+
+  - name: stg_warehouses
+    columns:
+      - name: warehouse_id
+        tests: [unique, not_null]
+
+  - name: stg_orders
+    columns:
+      - name: order_id
+        tests: [unique, not_null]
+      - name: customer_id
+        tests:
+          - not_null
+          - relationships:
+              to: ref('stg_customers')
+              field: customer_id
+
+  - name: stg_order_items
+    columns:
+      - name: order_id
+        tests:
+          - relationships:
+              to: ref('stg_orders')
+              field: order_id
+      - name: product_id
+        tests:
+          - relationships:
+              to: ref('stg_products')
+              field: product_id
+
+  - name: stg_purchase_orders
+    columns:
+      - name: po_id
+        tests: [unique, not_null]
+
+  - name: stg_shipments
+    columns:
+      - name: shipment_id
+        tests: [unique, not_null]
+
+  - name: stg_payments
+    columns:
+      - name: payment_id
+        tests: [unique, not_null]
+
+  - name: stg_returns
+    columns:
+      - name: return_id
+        tests: [unique, not_null]
+
+  - name: stg_promotions
+    columns:
+      - name: promo_id
+        tests: [unique, not_null]

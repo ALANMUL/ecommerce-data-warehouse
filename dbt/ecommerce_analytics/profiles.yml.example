@@ -1,0 +1,15 @@
+# Copy this to ~/.dbt/profiles.yml and fill in your own values.
+# NEVER commit your real profiles.yml or a service account key to git.
+
+ecommerce_analytics:
+  target: dev
+  outputs:
+    dev:
+      type: bigquery
+      method: service-account   # or 'oauth' if using gcloud auth application-default login
+      project: your-gcp-project-id
+      dataset: dbt_dev          # dbt will create staging/intermediate/marts/reporting as sub-schemas via +schema config
+      threads: 4
+      keyfile: /path/to/service-account.json   # omit this line if method: oauth
+      location: US
+      priority: interactive

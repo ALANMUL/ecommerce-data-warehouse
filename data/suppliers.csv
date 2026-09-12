@@ -1,0 +1,9 @@
+supplier_id,supplier_name,country,currency,payment_terms,lead_time_mean_days,lead_time_cv,min_order_qty,contract_start_date,is_active
+SUP_001,Apex Components Ltd,USA,USD,Net 30,5,0.25,50,2022-03-01,1
+SUP_002,Dragonwell Manufacturing,China,CNY,Net 45,25,0.45,200,2021-06-15,1
+SUP_003,Bavaria Precision GmbH,Germany,EUR,Net 60,10,0.3,80,2020-01-20,1
+SUP_004,Rio Grande Sourcing,Mexico,MXN,Net 30,7,0.28,60,2022-08-01,1
+SUP_005,Saigon Industrial Co,Vietnam,VND,Net 45,20,0.5,150,2021-11-10,1
+SUP_006,Mumbai Traders Inc,India,INR,Net 30,18,0.4,120,2022-02-14,1
+SUP_007,Amazonia Supply SA,Brazil,BRL,Net 60,22,0.48,180,2023-01-05,1
+SUP_008,Bangkok Assembly Works,Thailand,THB,Net 45,14,0.35,100,2022-05-22,1

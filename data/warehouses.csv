@@ -1,0 +1,6 @@
+warehouse_id,warehouse_name,city,state,warehouse_type,capacity_units
+WH_1,North Fulfillment Center,Chicago,IL,Fulfillment,50000
+WH_2,South Distribution Hub,Houston,TX,Fulfillment,45000
+WH_3,East Coast Center,New York,NY,Fulfillment,55000
+WH_4,West Coast Center,Seattle,WA,Fulfillment,50000
+WH_5,Overflow / Returns,Columbus,OH,Returns & Reserve,20000

@@ -1,0 +1,21 @@
+select
+    inventory_date,
+    product_id,
+    warehouse_id,
+    supplier_id,
+    region,
+    units_sold,
+    inventory_level,
+    reorder_point,
+    safety_stock,
+    order_quantity,
+    unit_cost,
+    unit_price,
+    promotion_flag,
+    stockout_flag,
+    lost_sales_qty,
+    lost_sales_value,
+    demand_forecast,
+    days_of_cover,
+    below_reorder_point_flag
+from {{ ref('int_inventory') }}
