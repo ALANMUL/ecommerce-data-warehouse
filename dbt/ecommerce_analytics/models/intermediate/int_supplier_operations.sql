@@ -1,14 +1,3 @@
--- Purchase-order grain supplier performance signal.
-with po as (
-    select * from {{ ref('stg_purchase_orders') }}
-),
-
-suppliers as (
-    select supplier_id, supplier_name, country, currency, payment_terms,
-           lead_time_mean_days, lead_time_cv, min_order_qty, is_active
-    from {{ ref('stg_suppliers') }}
-),
-
 final as (
     select
         po.po_id,
@@ -30,7 +19,11 @@ final as (
         po.actual_lead_days,
         s.lead_time_mean_days as contracted_lead_time_days,
         po.days_late,
-        case when po.days_late > 0 then 1 else 0 end as is_late,
+        case
+            when po.received_date is null then null
+            when po.days_late > 0 then 1
+            else 0
+        end as is_late,
         case when po.qty_shortfall > 0 then 1 else 0 end as is_short_shipped,
         po.status
     from po
