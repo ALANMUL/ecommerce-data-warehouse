@@ -1,3 +1,14 @@
+-- Purchase-order grain supplier performance signal.
+with po as (
+    select * from {{ ref('stg_purchase_orders') }}
+),
+
+suppliers as (
+    select supplier_id, supplier_name, country, currency, payment_terms,
+           lead_time_mean_days, lead_time_cv, min_order_qty, is_active
+    from {{ ref('stg_suppliers') }}
+),
+
 final as (
     select
         po.po_id,
