@@ -16,5 +16,6 @@ select
     days_late,
     is_late,
     is_short_shipped,
-    status
+    status,
+    case when is_late = 0 and is_short_shipped = 0 then 1 else 0 end as is_perfect_order
 from {{ ref('int_supplier_operations') }}
