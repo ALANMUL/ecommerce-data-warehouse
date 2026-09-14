@@ -1,8 +1,6 @@
-#!/usr/bin/env bash
 # Creates raw BigQuery tables from explicit DDL (sql/raw/*.sql), then loads
 # the CSVs in data/ into those tables. Schema is defined by hand, not
 # autodetected, so this must be run after any DDL changes are made.
-#
 # Requires: gcloud + bq CLI authenticated (gcloud auth login / application-default login).
 #
 # Usage:
