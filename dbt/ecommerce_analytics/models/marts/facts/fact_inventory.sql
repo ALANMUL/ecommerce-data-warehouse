@@ -18,6 +18,6 @@ select
     demand_forecast,
     days_of_cover,
     below_reorder_point_flag,
-    inventory_level * unit_cost as inventory_value,
-    case when days_of_cover > 90 then 1 else 0 end as excess_inventory_flag
+    inventory_value,
+    excess_inventory_flag
 from {{ ref('int_inventory') }}

@@ -1,20 +1,3 @@
--- Daily inventory position enriched with product/warehouse/supplier attributes.
-with inv as (
-    select * from {{ ref('stg_inventory_daily') }}
-),
-
-products as (
-    select product_id, product_name, category, brand from {{ ref('stg_products') }}
-),
-
-warehouses as (
-    select warehouse_id, warehouse_name, warehouse_type from {{ ref('stg_warehouses') }}
-),
-
-suppliers as (
-    select supplier_id, supplier_name, lead_time_mean_days from {{ ref('stg_suppliers') }}
-),
-
 final as (
     select
         i.inventory_date,
@@ -42,11 +25,5 @@ final as (
         i.demand_forecast,
         i.days_of_cover,
         case when i.inventory_level <= i.reorder_point then 1 else 0 end as below_reorder_point_flag,
-        i.lost_sales_qty * i.unit_price as lost_sales_value
-    from inv i
-    left join products p on i.product_id = p.product_id
-    left join warehouses w on i.warehouse_id = w.warehouse_id
-    left join suppliers s on i.supplier_id = s.supplier_id
-)
-
-select * from final
+        i.lost_sales_qty * i.unit_price as lost_sales_value,
+        i.inventory_level
