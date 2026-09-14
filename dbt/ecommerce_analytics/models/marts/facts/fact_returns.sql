@@ -11,5 +11,6 @@ select
     restocked_flag,
     product_name,
     category,
-    brand
+    brand,
+    supplier_id
 from {{ ref('int_returns') }}

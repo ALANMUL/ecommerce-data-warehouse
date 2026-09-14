@@ -3,7 +3,8 @@ with returns as (
 ),
 
 products as (
-    select product_id, product_name, category, brand from {{ ref('stg_products') }}
+    select product_id, product_name, category, brand, supplier_id
+    from {{ ref('stg_products') }}
 ),
 
 final as (
@@ -11,7 +12,8 @@ final as (
         r.*,
         p.product_name,
         p.category,
-        p.brand
+        p.brand,
+        p.supplier_id
     from returns r
     left join products p on r.product_id = p.product_id
 )
