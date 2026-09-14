@@ -19,5 +19,7 @@ select
     delivery_delay_days,
     processing_days,
     is_late_delivery,
-    is_delivered
+    is_delivered,
+    date_diff(delivery_date, ship_date, day) as transit_days,
+    safe_divide(shipping_cost, nullif(weight, 0)) as cost_per_kg
 from {{ ref('int_shipments') }}
